@@ -30,3 +30,14 @@ m=int(input("Enter the first number: "))
 n=int(input("Enter the second number: "))
 result =simGcd(m,n)
 print("GCD of ",m,",",n," : ",result)
+
+#Another Simplified program for find in GCD of two integers
+def simGcd(m,n):
+    for i in range(1,min(m,n)+1):
+        if m%1==0 and n%1==0:
+            mrcf=i
+    return mrcf
+m=int(input("Enter the first number: "))   
+n=int(input("Enter the second number: "))
+result =simGcd(m,n)
+print("GCD of ",m,",",n," : ",result)
