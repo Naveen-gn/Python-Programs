@@ -18,3 +18,12 @@ ans1= h(60)
 ans2= h(45)
 result=ans1-ans2
 print(result)
+
+#Third question
+def g(m,n):
+    res = 0
+    while m >= n:
+        (res,m) = (res+1,m/n)
+    return(res)
+result= g(375,4)
+print(result)
