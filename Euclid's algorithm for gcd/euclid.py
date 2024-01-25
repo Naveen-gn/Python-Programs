@@ -38,3 +38,15 @@ m=int(input("Enter the first number: "))
 n=int(input("Enter the second number: "))
 result =gcd(m,n)
 print("GCD of ",m,",",n," : ",result)
+
+#Another optimal Euclid's algorithm for gcd of two numbers using while loop
+def gcd(m,n):
+    if m<n:
+        (m,n)=(n,m)
+    while(m%n!=0):
+        (m,n)=(n,m%n)
+    return n
+m=int(input("Enter the first number: "))   
+n=int(input("Enter the second number: "))
+result =gcd(m,n)
+print("GCD of ",m,",",n," : ",result)
